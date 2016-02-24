@@ -17,7 +17,8 @@ public class Relaciones24022016 {
     public static void main(String[] args) {
         Movie pelicula = new Movie("Guerra de las galaxias");
         Rental prestamo = new Rental(1,pelicula);
-        
+        double valorPagar = prestamo.charge();
+        System.out.println("Pagar" + valorPagar);
     }
     
 }
